@@ -1,4 +1,4 @@
-import React from 'react'
+import SideBar from "../../components/modules/SideBar"
 
 export default function DashBoard() {
   return (

@@ -39,7 +39,7 @@ export default function NavLinks() {
   return (
     <>
       {/* Desktop and tablet nav links */}
-      <div className="hidden md:flex items-center space-x-6">
+      <div className="hidden md:flex items-center space-x-9">
         <button className="lg:flex items-center bg-azure-blue px-5 py-3 rounded-xl hidden">
           <img className="mr-2" src={Plus} />
           Create

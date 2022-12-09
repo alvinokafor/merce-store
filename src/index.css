@@ -2,3 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@media only screen and (min-width: 1024px) {
+  .nav-bar {
+    width: calc(100% - 341px);
+    transform: translateX(341px);
+  }
+}
+
+.menu-item:hover {
+  box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.4),
+    inset 0px 1px 1px rgba(255, 255, 255, 0.11) !important;
+} 
+
+.menu-item {
+  @apply cursor-pointer flex space-x-3 items-center p-3 hover:bg-gunmetal rounded-xl hover:shadow-sm transition-all duration-100;
+}
+

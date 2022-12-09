@@ -18,7 +18,8 @@ module.exports = {
         'sonic-silver': '#6F767E',
         'gunmetal': '#272B30',
         'black': '#111315',
-        'soft-black': '#1A1D1F'
+        'soft-black': '#1A1D1F',
+        'white': '#EFEFEF',
       },
       fontSize: {
         "heading": "2.5rem",

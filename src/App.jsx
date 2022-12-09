@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignIn from "./pages/onboarding/SignIn";
 import DashBoard from "./pages/seller-view/DashBoard";
 import Home from "./pages/customer-view/Home";
-import SideBar from "./components/modules/SideBar";
+
 
 function App() {
   return (

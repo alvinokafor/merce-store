@@ -14,7 +14,7 @@ export default function MobileProfileNav() {
 
       {profileMenu && <ProfileMenu />}
 
-      <div className="mt-44 mb-8 group cursor-pointer flex items-center justify-between p-4 bg-gunmetal md:hidden mx-6 rounded-xl shadow-sm">
+      <div className="mt-44 mb-8 group cursor-pointer flex items-center justify-between p-4 bg-gunmetal lg:hidden mx-6 rounded-xl shadow-sm">
         <div className="flex items-center gap-x-3">
           <ProfileImg />
 

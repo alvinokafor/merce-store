@@ -51,7 +51,7 @@ export default function NavLinks() {
           <img src={Notification} alt="Notification" />
         </button>
         <ProfileImg />
-        <button className="lg:hidden">
+        <button onClick={openMenuHandler} className="lg:hidden">
           <img src={MobileMenu} alt="Menu" />
         </button>
       </div>
@@ -74,7 +74,7 @@ export default function NavLinks() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <section className="md:hidden absolute top-0 left-0 right-0 bg-soft-black">
+        <section className=" md:pb-8 lg:hidden absolute top-0 left-0 right-0 bg-soft-black">
           <div className="flex justify-between items-center p-6 border-b-2 border-black">
             <button>
               <img src={Logo} alt="Logo" />

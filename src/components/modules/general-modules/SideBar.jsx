@@ -1,5 +1,5 @@
 import Logo from '/assets/icons/merce-logo.svg'
-import SidebarContent from '../../ui-components/seller-ui/dashboard/SidebarContent'
+import SidebarContent from '../../ui-components/general-ui/SidebarContent'
 
 export default function SideBar() {
   return (

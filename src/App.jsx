@@ -1,25 +1,21 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SignIn from "./pages/onboarding/SignIn";
-import DashBoard from "./pages/seller-view/DashBoard";
-import Home from "./pages/customer-view/Home";
+import AppRoutes from "./AppRoutes";
+// import { useLocation } from "react-router-dom";
+
+import SideBar from "./components/modules/general-modules/SideBar";
+import NavBar from "./components/modules/general-modules/NavBar";
 
 
 function App() {
+  // const location = useLocation().pathname;
+  // const currentPath = location.split("/")[1];
+
   return (
-    <div className="App">
-      <BrowserRouter>
-        
-        <Routes>
-          {/* SignIn */}
-          <Route path="/" element={<SignIn />} />
+    <div className="App bg-black overflow-auto text-white">
+    
+      <SideBar />
+      <NavBar />
 
-          {/* Sellers view routes */}
-          <Route path="/dashboard" element={<DashBoard />} />
-
-          {/* Customers view routes */}
-          <Route path="/home" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+      <AppRoutes />
     </div>
   );
 }

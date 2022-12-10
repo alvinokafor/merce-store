@@ -2,7 +2,6 @@ import React from "react";
 
 export default function ProfileImg() {
   return (
-    
     <section className="cursor-pointer relative group">
       <div className="w-12 h-12 rounded-full">
         <img
@@ -12,7 +11,7 @@ export default function ProfileImg() {
         />
       </div>
 
-      <section className="scale-0 group-hover:scale-100 transition-all duration-100 text-sonic-silver mt-2 p-2 w-[280px] rounded-xl absolute -right-4 group-hover:shadow-xl  bg-black lg:backdrop-blur-sm">
+      <section className="hidden lg:block scale-0 group-hover:scale-100 transition-all duration-100 text-sonic-silver mt-2 p-2 w-[280px] rounded-xl absolute -right-4 group-hover:shadow-xl  bg-black lg:backdrop-blur-sm">
         <div className="p-3 space-y-4 border-b border-gunmetal">
           <button className="block profile-menu-item">Profile</button>
           <button className="pb-2 block profile-menu-item">Edit profile</button>
@@ -23,7 +22,6 @@ export default function ProfileImg() {
           <button className="pb-2 block profile-menu-item">Log out</button>
         </div>
       </section>
-
     </section>
   );
 }

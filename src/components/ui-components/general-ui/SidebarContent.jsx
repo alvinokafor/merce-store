@@ -1,25 +1,36 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom'
 
-export default function SidebarContent() {
+export default function SidebarContent({ setMobileMenuOpen }) {
   const [productSubMenu, setProductSubMenu] = useState(false);
   const [customerSubMenu, setCustomerSubMenu] = useState(false);
   const [incomeSubMenu, setIncomeSubMenu] = useState(false);
 
+  //opens & closes products submenu
   const openProducts = () => {
     setProductSubMenu(!productSubMenu);
   };
 
+  //opens & closes customer submenu
   const openCustomer = () => {
     setCustomerSubMenu(!customerSubMenu);
   };
 
+  //opens & closes income submenu
   const openIncome = () => {
     setIncomeSubMenu(!incomeSubMenu);
   };
 
+  //closes mobile menu on page switch
+  const changeLinkHandler = () => {
+    setMobileMenuOpen(false)
+  }
+
   return (
     <div>
       <div className="px-6 font-semibold space-y-2 text-sonic-silver mt-6">
+
+        
         <div id="menu-item" className="menu-item group">
           <svg
             width="24"
@@ -36,11 +47,14 @@ export default function SidebarContent() {
               fill="#6F767E"
             />
           </svg>
-
-          <p className="group-hover:text-white">Home</p>
+          <Link to='/'>
+          <p onClick={changeLinkHandler} className="group-hover:text-white">Home</p>
+          </Link>
         </div>
+        
 
         <aside>
+          
           <div id="menu-item" className="menu-item group">
             <svg
               width="24"
@@ -59,7 +73,9 @@ export default function SidebarContent() {
             </svg>
 
             <div className="flex w-5/6 justify-between items-center">
-              <p className="group-hover:text-white">Products</p>
+            <Link to='/products'>
+              <p onClick={changeLinkHandler} className="group-hover:text-white">Products</p>
+              </Link>
               <div className="flex space-x-3 items-center">
                 {/* Add product button */}
                 <button>
@@ -132,6 +148,7 @@ export default function SidebarContent() {
               </div>
             </div>
           </div>
+          
 
           {productSubMenu && (
             <div className="flex flex-col w-4/6 ml-9">
@@ -142,6 +159,7 @@ export default function SidebarContent() {
         </aside>
 
         <aside>
+          
           <div id="menu-item" className="menu-item group">
             <svg
               width="24"
@@ -167,7 +185,9 @@ export default function SidebarContent() {
             </svg>
 
             <div className="flex w-5/6 justify-between">
-              <p className="group-hover:text-white">Customers</p>
+            <Link to='/customers'>
+              <p onClick={changeLinkHandler} className="group-hover:text-white">Customers</p>
+              </Link>
 
               {/* open customers sub menu button */}
               <button
@@ -195,6 +215,7 @@ export default function SidebarContent() {
               {/* open customers sub menu button */}
             </div>
           </div>
+          
 
           {customerSubMenu && (
             <div className="flex flex-col w-4/6 ml-9">
@@ -204,6 +225,7 @@ export default function SidebarContent() {
         </aside>
 
         <aside>
+          
           <div id="menu-item" className="menu-item group">
             <svg
               width="24"
@@ -229,7 +251,9 @@ export default function SidebarContent() {
             </svg>
 
             <div className="flex w-5/6 justify-between">
-              <p className="group-hover:text-white">Income</p>
+            <Link to='/income'>
+              <p onClick={changeLinkHandler} className="group-hover:text-white">Income</p>
+              </Link>
               {/* open income sub menu button */}
               <button
                 className={
@@ -256,6 +280,7 @@ export default function SidebarContent() {
               {/* open income sub menu button */}
             </div>
           </div>
+          
 
           {incomeSubMenu && (
             <div className="flex flex-col w-4/6 ml-9">

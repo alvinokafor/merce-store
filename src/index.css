@@ -4,8 +4,8 @@
 
 @media only screen and (min-width: 1024px) {
   .nav-bar {
-    width: calc(100% - 341px);
-    transform: translateX(341px);
+    width: calc(100% - 340px) !important;
+    transform: translateX(340px) !important;
   }
 }
 
@@ -20,4 +20,20 @@
 
 .profile-menu-item {
     @apply hover:text-white transition-all duration-75
+}
+
+body {
+  background-color: #111315;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+ 
+body::-webkit-scrollbar-track {
+  background-color: #111315;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #272B30;
 }

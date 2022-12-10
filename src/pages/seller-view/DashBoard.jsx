@@ -1,11 +1,11 @@
-import SideBar from "../../components/modules/seller-modules/SideBar"
-import NavBar from "../../components/modules/seller-modules/NavBar"
+import PageWrapper from "../../components/modules/general-modules/PageWrapper";
 
 export default function DashBoard() {
   return (
-    <section className="bg-black h-screen text-white">
-    <SideBar />
-    <NavBar />
-    </section>
-  )
+    <>
+      <PageWrapper>
+        <h1 className="text-2xl">Dashboard</h1>
+      </PageWrapper>
+    </>
+  );
 }

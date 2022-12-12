@@ -20,7 +20,9 @@ module.exports = {
         'black': '#111315',
         'soft-black': '#1A1D1F',
         'light-grey': '#F4F4F4',
-        'light-white': '#FCFCFC'
+        'light-white': '#FCFCFC',
+        'white': '#EFEFEF',
+        'soft-red': '#FF6A55'
       },
       fontSize: {
         "heading": "2.5rem",

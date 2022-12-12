@@ -1,7 +1,11 @@
-import React from 'react'
+import PageWrapper from "../../components/modules/general-modules/PageWrapper";
 
 export default function Customers() {
   return (
-    <div>Customers</div>
-  )
+    <>
+      <PageWrapper>
+        <h1 className="text-2xl">Customers</h1>
+      </PageWrapper>
+    </>
+  );
 }

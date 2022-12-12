@@ -22,6 +22,14 @@
   @apply hover:text-white transition-all duration-75;
 }
 
+.promotion-btn {
+  @apply flex items-center justify-center md:justify-between py-2 px-6 md:px-3 lg:px-12 border-2 rounded-xl border-sonic-silver;
+}
+
+.promotion-btn-text {
+  @apply hidden md:inline-block md:ml-2 md:font-semibold;
+}
+
 body {
   background-color: #111315;
 }

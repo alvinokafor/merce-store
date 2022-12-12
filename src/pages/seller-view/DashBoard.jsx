@@ -3,6 +3,7 @@ import Overview from "../../components/modules/dashboard/Overview";
 import ProductView from "../../components/modules/dashboard/ProductView";
 import Promotions from "../../components/modules/dashboard/Promotions";
 import PopularProducts from "../../components/modules/dashboard/PopularProducts";
+import RefundRequest from "../../components/modules/dashboard/RefundRequest";
 
 export default function DashBoard() {
   return (
@@ -16,8 +17,9 @@ export default function DashBoard() {
             <Promotions />
           </div>
 
-          <div className="md:w-[35%] lg:w-[30%] mt-4 md:mt-0">
+          <div className="space-y-4 md:w-[35%] lg:w-[30%] mt-4 md:mt-0">
               <PopularProducts />
+              <RefundRequest />
           </div>
         </section>
       </PageWrapper>

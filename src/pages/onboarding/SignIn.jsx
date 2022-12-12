@@ -13,6 +13,7 @@ export default function SignIn() {
        <button className='text-black font-black flex mb-5 border-gray-300 w-full rounded-lg h-9 justify-center border pt-1'> <img src="/assets/icons/google.svg" alt="" className='mr-4' /> Google</button>
        <p className='text-gray-300'>This site is protected by reCAPTCHA and the Google Privacy Policy.</p>
       </div>
+      kill bill
     </div>
   )
 }

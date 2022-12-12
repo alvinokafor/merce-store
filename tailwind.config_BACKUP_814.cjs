@@ -19,11 +19,13 @@ module.exports = {
         'gunmetal': '#272B30',
         'black': '#111315',
         'soft-black': '#1A1D1F',
+<<<<<<< HEAD
         'light-grey': '#F4F4F4',
-        'light-white': '#FCFCFC',
+        'light-white': '#FCFCFC'
+=======
         'white': '#EFEFEF',
-        'soft-red': '#FF6A55',
-        'logo-color':'#D16028'
+        'soft-red': '#FF6A55'
+>>>>>>> 493074aea66898b42a08ef4de16bbad48981b3b9
       },
       fontSize: {
         "heading": "2.5rem",

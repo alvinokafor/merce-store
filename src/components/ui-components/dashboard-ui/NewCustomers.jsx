@@ -1,28 +1,9 @@
 import UsersImg from "../general-ui/UsersImg";
+import { demoNewCustomers } from "../../../merce-dummy-data";
 
 export default function NewCustomers() {
-  const demoUsers = [
-    {
-      id: "user1",
-      name: "Dennis",
-      img: "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    },
-
-    {
-      id: "user2",
-      name: "Gladys",
-      img: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    },
-
-    {
-      id: "user3",
-      name: "Leo",
-      img: "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80",
-    },
-  ];
-
   const screenSize = window.innerWidth;
-  const slicedUsers = demoUsers.slice(0, 2);
+  const slicedUsers = demoNewCustomers.slice(0, 2);
 
   return (
     <section className="text-sonic-silver mt-6">
@@ -30,7 +11,7 @@ export default function NewCustomers() {
 
       <div className="flex justify-between items-center mb-8">
         {screenSize >= 768
-          ? demoUsers.map((user) => (
+          ? demoNewCustomers.map((user) => (
               <div key={user.id}>
                 <UsersImg userImg={user.img} />
                 <p className="text-white font-medium text-center mt-3">

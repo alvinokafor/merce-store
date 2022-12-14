@@ -67,7 +67,8 @@ body::-webkit-scrollbar-thumb {
   /* creating a custom design */
   height: 24px;
   width: 24px;
-  border: 2px solid #272B30;
+  border: 2px solid rgba(111, 118, 126, 0.4);
+  background-color: #1A1D1F;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
@@ -84,4 +85,9 @@ body::-webkit-scrollbar-thumb {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='9'%3E%3Cpath fill='none' stroke='%23FFF' stroke-width='2' d='M1 4.304L3.696 7l6-6'/%3E%3C/svg%3E");
   color: #fff;
   margin-bottom: 2px;
+}
+
+.product-item:hover > input {
+  border: 2px solid rgba(111, 118, 126, 0.4);
+  background-color: #1A1D1F;
 }

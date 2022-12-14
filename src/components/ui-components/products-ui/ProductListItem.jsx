@@ -3,7 +3,7 @@ import Increase from "/assets/icons/increase.svg";
 
 export default function ProductListItem({title, perf, price, sales, status, img, category}) {
   return (
-    <div className="mt-3">
+    <div className="product-item px-3 hover:rounded-md hover:bg-gunmetal transition-all duration-100 border-b py-4 border-gunmetal cursor-pointer">
       <div className="flex  text-left items-center">
         <div className="flex basis-2/5 gap-x-4">
           <input className="checkbox" type="checkbox" name="" id="" />

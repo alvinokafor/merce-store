@@ -5,6 +5,10 @@ import DashBoard from "./pages/seller-view/DashBoard";
 import Products from "./pages/seller-view/Products";
 import Customers from "./pages/seller-view/Customers";
 import Income from "./pages/seller-view/Income";
+import ProductDrafts from "./pages/seller-view/ProductDrafts";
+import ReleasedProducts from "./pages/seller-view/ReleasedProducts";
+import CustomerList from "./pages/seller-view/CustomerList";
+import Payouts from "./pages/seller-view/Payouts";
 
 export default function AppRoutes() {
   return (
@@ -14,13 +18,25 @@ export default function AppRoutes() {
 
 
       {/* Sellers view routes */}
-      <Route
-        path="/"
-        element={<DashBoard />}
-      />
-      <Route path="/products" element={<Products />} />
-      <Route path="/customers" element={<Customers />} />
-      <Route path="/income" element={<Income />} />
+      <Route path="/" element={<DashBoard />} />
+
+      <Route path='/products'>
+          <Route index element={<Products />}  />
+          <Route path="drafts" element={<ProductDrafts />} />
+          <Route path="released" element={<ReleasedProducts />} />
+      </Route>
+
+      <Route path='/customers'>
+        <Route index element={<Customers />} />
+        <Route path='customer-list' element={<CustomerList />}/>
+      </Route>
+
+      <Route path='/income'>
+        <Route index element={<Income />} />
+        <Route path='payouts' element={<Payouts />}/>
+      </Route>
+
+     
 
     </Routes>
   );

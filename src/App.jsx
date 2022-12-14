@@ -7,13 +7,15 @@ import NavBar from "./components/modules/general-modules/NavBar";
 
 function App() {
   const location = useLocation().pathname;
+  // console.log(location)
   const currentPath = location.split("/")[1];
+  // console.log(currentPath)
 
   return (
     <div className="App bg-black overflow-auto text-white">
     
-      {currentPath !== 'signup' && <SideBar />}
-      {currentPath !== 'signup' && <NavBar />}
+      {currentPath !== 'signup' && <SideBar currentPath={currentPath}/>}
+      {currentPath !== 'signup' && <NavBar currentPath={currentPath}/>}
 
       <AppRoutes />
     </div>

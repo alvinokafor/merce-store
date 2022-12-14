@@ -11,7 +11,7 @@ import SearchIcon from "/assets/icons/search.svg";
 import Cancel from "/assets/icons/cancel.svg";
 import Logo from "/assets/icons/merce-single-logo.svg";
 
-export default function NavLinks() {
+export default function NavLinks({currentPath}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
  
   const openMenuHandler = () => {
@@ -72,7 +72,7 @@ export default function NavLinks() {
             </button>
           </div>
 
-          <SidebarContent setMobileMenuOpen={setMobileMenuOpen}/>
+          <SidebarContent setMobileMenuOpen={setMobileMenuOpen} currentPath={currentPath}/>
 
           <MobileProfileNav />
         </section>

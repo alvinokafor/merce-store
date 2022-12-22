@@ -5,7 +5,7 @@ import PreviewImg from '../../ui-components/products-ui/PreviewImg'
 import PreviewTitle from '../../ui-components/products-ui/PreviewTitle'
 import PreviewBio from '../../ui-components/products-ui/PreviewBio'
 
-export default function PreviewProduct({previewImg}) {
+export default function PreviewProduct({previewImg, productTitle, productPrice}) {
   return (
     <section className=" bg-soft-black py-6  rounded-lg">
       <div className="mx-6 flex justify-between items-center mb-8">
@@ -16,7 +16,7 @@ export default function PreviewProduct({previewImg}) {
 
       <div className='mx-6 space-y-4'>
         <PreviewImg previewImg={previewImg}/>
-        <PreviewTitle />
+        <PreviewTitle productPrice={productPrice} productTitle={productTitle}/>
         <PreviewBio />
       </div>
 

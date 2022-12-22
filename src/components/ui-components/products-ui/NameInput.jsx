@@ -1,7 +1,11 @@
 import React from "react";
 import ToolTip from "/assets/icons/tool-tip.svg";
 
-export default function NameInput() {
+export default function NameInput({productTitle, setProductTitle}) {
+  const titleHandler = (e) => {
+    setProductTitle(e.target.value)
+  }
+
   return (
     <div className="mx-6 flex flex-col">
       <div className="space-x-2 flex mb-3 items-center">
@@ -15,6 +19,7 @@ export default function NameInput() {
         className="bg-black outline-none p-3 border-2 rounded-xl border-black focus:border-azure-blue"
         type="text"
         id="product-name"
+        onChange={titleHandler}
       />
     </div>
   );

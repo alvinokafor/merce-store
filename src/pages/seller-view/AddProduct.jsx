@@ -7,6 +7,15 @@ import ProductPrice from "../../components/modules/products/ProductPrice";
 
 export default function AddProduct() {
   const [previewImg, setPreviewImg] = useState(null);
+  const [productTitle, setProductTitle] = useState("Title");
+  const [productPrice, setProductPrice] = useState(0);
+
+  //resets add product data
+  const clearDataHandler = (e) => {
+    setPreviewImg(null)
+    setProductTitle('Title')
+    setProductPrice(0)
+  };
 
   return (
     <>
@@ -15,23 +24,34 @@ export default function AddProduct() {
 
         <section className="flex gap-x-2">
           <div className="space-y-2 w-full md:w-[65%] lg:w-[70%]">
-            <ProductName />
+            <ProductName setProductTitle={setProductTitle} />
             <ImgUpload setPreviewImg={setPreviewImg} previewImg={previewImg} />
-            <ProductPrice />
+            <ProductPrice setProductPrice={setProductPrice} />
           </div>
 
           <div className="hidden md:block md:w-[35%] lg:w-[30%] mt-4 md:mt-0">
-            <PreviewProduct previewImg={previewImg} />
+            <PreviewProduct
+              productTitle={productTitle}
+              productPrice={productPrice}
+              previewImg={previewImg}
+            />
           </div>
         </section>
 
-        <div className="space-x-4 mt-6">
-          <button className="py-3 px-5 bg-azure-blue rounded-lg font-semibold">
+        <div className="space-x-4 mt-6 text-sm">
+          <button className="py-2 px-4 bg-azure-blue rounded-lg font-semibold">
             Publish
           </button>
 
-          <button className="py-3 px-5 bg-azure-blue rounded-lg font-semibold">
+          <button className="py-2 px-4 bg-azure-blue rounded-lg font-semibold">
             Save to draft
+          </button>
+
+          <button
+            onClick={clearDataHandler}
+            className="py-2 px-4 bg-transparent border-2 border-gunmetal rounded-lg font-semibold"
+          >
+            Clear data
           </button>
         </div>
       </PageWrapper>

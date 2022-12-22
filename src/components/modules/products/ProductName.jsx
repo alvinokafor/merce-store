@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import SectionTitle from "../../ui-components/general-ui/SectionTitle";
 import NameInput from "../../ui-components/products-ui/NameInput";
 
-export default function ProductName() {
+export default function ProductName({setProductTitle}) {
   return (
     <section className=" bg-soft-black py-6  rounded-lg">
       <div className="mx-6 flex justify-between items-center mb-8">
@@ -26,7 +26,7 @@ export default function ProductName() {
         </button></Link>
       </div>
 
-      <NameInput />
+      <NameInput setProductTitle={setProductTitle}/>
     </section>
   );
 }

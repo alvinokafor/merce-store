@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom'
 import ProfileImg from "../../ui-components/general-ui/ProfileImg";
 import MobileProfileNav from "./MobileProfileNav";
 import SidebarContent from "../../ui-components/general-ui/SidebarContent";
@@ -27,10 +28,10 @@ export default function NavLinks({currentPath}) {
     <>
       {/* Desktop and tablet nav links */}
       <div className="hidden md:flex items-center space-x-9">
-        <button className="lg:flex items-center bg-azure-blue px-5 py-3 rounded-xl hidden">
+       <Link to='/add-product'><button className="lg:flex items-center bg-azure-blue px-5 py-3 rounded-xl hidden">
           <img className="mr-2" src={Plus} />
           Create
-        </button>
+        </button></Link>
         <button>
           <img src={Comment} alt="Message" />
         </button>

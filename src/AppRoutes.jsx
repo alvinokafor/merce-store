@@ -9,6 +9,7 @@ import ProductDrafts from "./pages/seller-view/ProductDrafts";
 import ReleasedProducts from "./pages/seller-view/ReleasedProducts";
 import CustomerList from "./pages/seller-view/CustomerList";
 import Payouts from "./pages/seller-view/Payouts";
+import AddProduct from'./pages/seller-view/AddProduct'
 
 export default function AppRoutes() {
   return (
@@ -35,6 +36,8 @@ export default function AppRoutes() {
         <Route index element={<Income />} />
         <Route path='payouts' element={<Payouts />}/>
       </Route>
+
+      <Route path='/add-product' element={<AddProduct />} />
 
      
 

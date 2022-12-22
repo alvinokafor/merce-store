@@ -96,3 +96,7 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid rgba(111, 118, 126, 0.4);
   background-color: #1A1D1F;
 }
+
+#upload-file {
+  display: none;
+}

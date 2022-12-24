@@ -1,3 +1,8 @@
+import MobileIcon from "/assets/icons/mobile-device.svg";
+import TabletIcon from "/assets/icons/tablet-device.svg";
+import DesktopIcon from "/assets/icons/desktop-device.svg";
+
+
 export const popularProducts = [
   {
     id: "product1",
@@ -55,6 +60,79 @@ export const demoNewCustomers = [
     img: "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80",
   },
 ];
+
+export const allCustomersData = [
+  {
+    id: "user1",
+    name: "Dennis Rodman",
+    username: '@dennis21',
+    email: 'dennis@gmail.com',
+    purchases: '11',
+    lifetime: '3,400',
+    img: "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+  },
+
+  {
+    id: "user2",
+    name: "Gladys Knight",
+    username: '@gladys',
+    email: 'gladys@gmail.com',
+    purchases: '5',
+    lifetime: '1,400',
+    img: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+  },
+
+  {
+    id: "user3",
+    name: "Leo Sturidge",
+    username: '@dleo',
+    email: 'leo@gmail.com',
+    purchases: '25',
+    lifetime: '5,900',
+    img: "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80",
+  },
+
+  {
+    id: "user4",
+    name: "Sheldon Cooper",
+    username: '@shelly',
+    email: 'sheldon@gmail.com',
+    purchases: '15',
+    lifetime: '5,800',
+    img: "https://images.unsplash.com/photo-1584999734482-0361aecad844?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+  },
+
+  {
+    id: "user5",
+    name: "Leonard Hofstader",
+    username: '@leohoff',
+    email: 'hoffstader@gmail.com',
+    purchases: '35',
+    lifetime: '4,800',
+    img: "https://images.unsplash.com/photo-1519456264917-42d0aa2e0625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+  },
+
+  {
+    id: "user6",
+    name: "Danny Glover",
+    username: '@danny',
+    email: 'childish@gmail.com',
+    purchases: '5',
+    lifetime: '800',
+    img: "https://images.unsplash.com/photo-1524660988542-c440de9c0fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+  },
+
+  {
+    id: "user7",
+    name: "Lia Campbell",
+    username: '@lia34',
+    email: 'liacamp@gmail.com',
+    purchases: '23',
+    lifetime: '6,900',
+    img: "https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+  },
+]
+
 
 export const allProducts = [
   {
@@ -160,4 +238,24 @@ export const allProducts = [
     img: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=753&q=80",
     status: "Active",
   }
+];
+
+export const topDevicesData = [
+  {
+    img: MobileIcon,
+    title: "Mobile",
+    data: "30%",
+  },
+
+  {
+    img: TabletIcon,
+    title: "Tablet",
+    data: "20%",
+  },
+
+  {
+    img: DesktopIcon,
+    title: "Desktop",
+    data: "50%",
+  },
 ];

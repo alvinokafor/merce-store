@@ -11,7 +11,7 @@ export default function AddProduct() {
   const [productPrice, setProductPrice] = useState(0);
 
   //resets add product data
-  const clearDataHandler = (e) => {
+  const clearDataHandler = () => {
     setPreviewImg(null)
     setProductTitle('Title')
     setProductPrice(0)
@@ -24,7 +24,7 @@ export default function AddProduct() {
 
         <section className="flex gap-x-2">
           <div className="space-y-2 w-full md:w-[65%] lg:w-[70%]">
-            <ProductName setProductTitle={setProductTitle} />
+            <ProductName  setProductTitle={setProductTitle} />
             <ImgUpload setPreviewImg={setPreviewImg} previewImg={previewImg} />
             <ProductPrice setProductPrice={setProductPrice} />
           </div>

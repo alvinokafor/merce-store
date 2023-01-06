@@ -1,7 +1,7 @@
 import React from "react";
 import ToolTip from "/assets/icons/tool-tip.svg";
 
-export default function NameInput({productTitle, setProductTitle}) {
+export default function NameInput({setProductTitle}) {
   const titleHandler = (e) => {
     setProductTitle(e.target.value)
   }
@@ -22,5 +22,5 @@ export default function NameInput({productTitle, setProductTitle}) {
         onChange={titleHandler}
       />
     </div>
-  );
+  ); 
 }
